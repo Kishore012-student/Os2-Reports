@@ -1,0 +1,17 @@
+# OS2 Reports
+
+> Enterprise AI forensic insurance claim verification, dual-layer OCR, and automated report dossier generation by OS2 Studio.
+
+## Product Overview
+- [Home](https://os2reports.com/): Official homepage for OS2 Reports AI claim forensic software.
+- [Why OS2 Reports](https://os2reports.com/#why-os2reports): Benefits of replacing manual transcription with automated forensic verification.
+- [Workflow](https://os2reports.com/#technology): Six-stage deterministic forensic pipeline from document upload to signed-off report.
+- [Workspaces](https://os2reports.com/#capabilities): Dedicated investigator and manager role workspaces with fail-closed tenant boundary isolation.
+- [Automated Synthesis](https://os2reports.com/#synthesis): Dual-layer OCR, Jinja2/DOCX/PDF generation, and SHA-256 tamper-evident evidence chains.
+- [FAQ](https://os2reports.com/#faq): Frequently asked questions on OCR formats, accuracy, multi-tenancy, and custom branding.
+
+## Technical Capabilities
+- **Dual-Layer OCR & Vision AI**: Multi-lingual OCR engines paired with multimodal AI for degraded scans, RC books, FIRs, and medical bills.
+- **SHA-256 Tamper-Evident Hashing**: Cryptographic hash commitment on every uploaded file to maintain chain of custody in court or arbitration.
+- **Discrepancy & Fraud Analysis**: Cross-validates policy dates, driver licenses, hospital admission stamps, and repair invoice line items.
+- **Automated Report Dossier Synthesis**: Compiles complete DOCX and PDF claim dossiers with embedded evidence logs and manager sign-off.

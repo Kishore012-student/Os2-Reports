@@ -1,0 +1,19 @@
+# robots.txt for OS2 Reports (https://os2reports.com/)
+User-agent: *
+Allow: /
+
+# AI Search & Answer Engine Indexing
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Sitemaps
+Sitemap: https://os2reports.com/sitemap.xml

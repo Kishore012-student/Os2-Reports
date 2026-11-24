@@ -1,0 +1,8 @@
+{
+  "name": "os2-reports",
+  "version": "1.0.0",
+  "description": "OS2 Reports — Automated Insurance Claims OCR & AI Form Generation (by OS2 Studio)",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}

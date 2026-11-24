@@ -1,0 +1,1126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OS2 Reports — AI Insurance Claims OCR &amp; Report Generator</title>
+    <meta
+      name="description"
+      content="Automate insurance claim processing with AI OCR. Extract policy &amp; repair data, detect fraud discrepancies, and generate compliant claim reports in 5 minutes."
+    />
+    <meta
+      name="keywords"
+      content="insurance claims OCR, AI claim form generator, claim report automation, insurance fraud detection, motor insurance claim processing, document forensic analysis, SHA-256 evidence vault, insurance surveyor software, automated claim dossier"
+    />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="author" content="OS2 Studio" />
+    <link rel="canonical" href="https://os2reports.com/" />
+
+    <!-- Favicon & Brand Icons -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%230a0a0a'/%3E%3Ccircle cx='16' cy='16' r='9' fill='%23ffb600'/%3E%3Cpath d='M12 16h8' stroke='%230a0a0a' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E"
+    />
+    <meta name="theme-color" content="#ffb600" />
+
+    <!-- Open Graph / Facebook / LinkedIn Metadata -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="OS2 Reports by OS2 Studio" />
+    <meta property="og:url" content="https://os2reports.com/" />
+    <meta property="og:title" content="OS2 Reports — AI Insurance Claims OCR &amp; Report Generator" />
+    <meta
+      property="og:description"
+      content="Automate insurance claim processing with AI OCR. Extract policy &amp; repair data, detect fraud discrepancies, and generate compliant claim reports in 5 minutes."
+    />
+    <meta property="og:image" content="https://os2reports.com/assets/images/hero_damage_evidence_1795435760310.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="OS2 Reports AI insurance claim forensic verification dashboard" />
+
+    <!-- Twitter / X Metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@os2studio" />
+    <meta name="twitter:creator" content="@os2studio" />
+    <meta name="twitter:title" content="OS2 Reports — AI Insurance Claims OCR &amp; Report Generator" />
+    <meta
+      name="twitter:description"
+      content="Automate insurance claim processing with AI OCR. Extract policy &amp; repair data, detect fraud discrepancies, and generate compliant claim reports in 5 minutes."
+    />
+    <meta name="twitter:image" content="https://os2reports.com/assets/images/hero_damage_evidence_1795435760310.jpg" />
+    <meta name="twitter:image:alt" content="OS2 Reports AI insurance claim forensic verification dashboard" />
+
+    <!-- Structured Data: Schema.org (SoftwareApplication, Organization, FAQPage) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://os2reports.com/#organization",
+            "name": "OS2 Reports",
+            "url": "https://os2reports.com/",
+            "sameAs": [
+              "https://www.os2studio.com/",
+              "https://twitter.com/os2studio",
+              "https://www.linkedin.com/company/os2studio"
+            ],
+            "parentOrganization": {
+              "@type": "Organization",
+              "name": "OS2 Studio",
+              "url": "https://www.os2studio.com/",
+              "sameAs": [
+                "https://www.os2studio.com/",
+                "https://twitter.com/os2studio"
+              ]
+            },
+            "description": "Enterprise AI forensic insurance claim verification, dual-layer OCR, and automated report generation."
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://os2reports.com/#website",
+            "url": "https://os2reports.com/",
+            "name": "OS2 Reports",
+            "publisher": {
+              "@id": "https://os2reports.com/#organization"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://os2reports.com/#software",
+            "name": "OS2 Reports",
+            "operatingSystem": "All (Cloud Web Application)",
+            "applicationCategory": "BusinessApplication",
+            "description": "Extract policy, incident, and repair data from claim documents with AI-powered OCR, automatically generate compliant insurance claim reports, and archive files in encrypted cloud storage.",
+            "url": "https://os2reports.com/",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "category": "SaaS / Enterprise Trial"
+            },
+            "featureList": [
+              "Multi-lingual OCR for RC books, police FIRs, hospital records & repair estimates",
+              "SHA-256 cryptographic tamper-evident evidence chain-of-custody vault",
+              "Cross-document discrepancy & insurance fraud detection engine",
+              "Automated custom-branded DOCX and PDF claim investigation dossier generation",
+              "Fail-closed multi-tenant enterprise data boundary isolation"
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://os2reports.com/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What file formats are supported for evidence upload?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The platform supports single and multi-page PDF documents, JPEG and PNG inspection images, TIFF scans, and Microsoft Word files. Maximum upload size per file is 25 MB with strict magic-byte content validation and SHA-256 hashing."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does the system handle poor-quality or handwritten scans?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our pipeline applies adaptive OpenCV image preprocessing—automatic contrast enhancement and deskewing—paired with PaddleOCR and multimodal vision models to accurately parse degraded scans, handwritten entries, and physical hospital or police stamps."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can our investigators see claims from other branches or partner insurers?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Fail-closed multi-tenant boundary isolation is enforced across the database, cache, and filesystem layers per organization. Any cross-tenant access attempt is immediately blocked and recorded in the tamper-resistant security AuditLog."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can report templates be customized with our company branding?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. The report synthesis engine supports custom DOCX templates so each insurance organization can embed its official letterhead, signatory stamps, legal disclaimers, evidence tables, and custom field layouts across both Word and PDF outputs."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+
+    <!-- Performance Preconnects for Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Non-blocking Optimized Google Fonts (Poppins + JetBrains Mono, display=swap enabled) -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+      />
+    </noscript>
+
+    <!-- Production CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Site Header / Navbar -->
+    <header class="site-header">
+      <div class="container navbar-container">
+        <a href="#top" class="brand-mark" aria-label="OS2 Reports Home">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" class="shrink-0" aria-hidden="true">
+            <defs>
+              <linearGradient id="cfOrbA" x1="2" y1="2" x2="26" y2="26" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#FFD54F" />
+                <stop offset="60%" stop-color="#FFB600" />
+                <stop offset="100%" stop-color="#E0A100" />
+              </linearGradient>
+              <linearGradient id="cfOrbB" x1="24" y1="4" x2="6" y2="24" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#FFB600" stop-opacity="0.95" />
+                <stop offset="100%" stop-color="#D97706" stop-opacity="0.75" />
+              </linearGradient>
+            </defs>
+            <circle cx="14" cy="14" r="12" fill="url(#cfOrbA)" />
+            <path
+              d="M14 5.5C9.30558 5.5 5.5 9.30558 5.5 14C5.5 18.6944 9.30558 22.5 14 22.5C17.1 22.5 19.81 20.84 21.3 18.36"
+              stroke="#0a0a0a"
+              stroke-width="2.6"
+              stroke-linecap="round"
+            />
+            <circle cx="14" cy="14" r="4.2" fill="url(#cfOrbB)" stroke="#0a0a0a" stroke-width="1.6" />
+          </svg>
+          <span>OS2 Reports</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#why-os2reports" class="nav-link">Why OS2 Reports</a>
+          <a href="#technology" class="nav-link">Workflow</a>
+          <a href="#synthesis" class="nav-link">Synthesis</a>
+          <a href="#capabilities" class="nav-link">Workspaces</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+        </nav>
+
+        <!-- Desktop Actions -->
+        <div class="nav-actions">
+
+          <a href="https://d105tkku040mlv.cloudfront.net" class="btn-login" id="btnOpenLogin" target="_blank" rel="noreferrer">Log in</a>
+          <a href="https://d105tkku040mlv.cloudfront.net/login?role=employee" class="nav-get-started" target="_blank" rel="noreferrer">Get started</a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation menu" aria-expanded="false">
+          <span class="hamburger" aria-hidden="true"><i></i><i></i><i></i></span>
+        </button>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <nav aria-label="Mobile navigation" style="display:flex; flex-direction:column; gap:4px;">
+          <a href="#why-os2reports" class="mobile-nav-link">Why OS2 Reports</a>
+          <a href="#technology" class="mobile-nav-link">Workflow</a>
+          <a href="#synthesis" class="mobile-nav-link">Synthesis</a>
+          <a href="#capabilities" class="mobile-nav-link">Workspaces</a>
+          <a href="#faq" class="mobile-nav-link">FAQ</a>
+        </nav>
+        <div class="mobile-actions">
+          <button type="button" class="mobile-btn-outline" id="mobileBtnLogin">Log in</button>
+          <button type="button" class="mobile-btn-primary" id="mobileBtnDemo">Get started</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section — interactive claim forensics workspace -->
+      <section id="top" class="hero-section hv-section">
+        <div class="container">
+          <!-- Centered editorial hero header -->
+          <div class="hc-header">
+            <h1 class="hc-title">Automate Your Claims,<br />Extraction and Reports.</h1>
+            <div class="hc-cta">
+              <button type="button" class="hc-btn" id="heroScheduleDemo">Schedule a demo</button>
+            </div>
+          </div>
+
+          <!-- Interactive workspace showcase -->
+          <div id="workspace" class="hero-aura-gradient hero-workspace-wrapper">
+            <div class="hero-workspace-card">
+              <div class="hero-workspace-layout">
+                <!-- Left vertical app rail -->
+                <aside class="workspace-rail" aria-label="Workspace tools">
+                  <div class="rail-tools">
+                    <button type="button" class="rail-btn active-black" id="railBtnWorkspace" aria-label="OCR Workspace Home">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg>
+                    </button>
+                    <button type="button" class="rail-btn" id="railBtnQueue" aria-label="Recent Claim Queue">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M8 13h2M8 17h2M14 13h2M14 17h2"/></svg>
+                    </button>
+                    <button type="button" class="rail-btn" id="railBtnForms" aria-label="Auto-Generated Claim Reports">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/></svg>
+                    </button>
+                    <button type="button" class="rail-btn" id="railBtnVault" aria-label="Tamper-Evident SHA-256 Vault">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="10" width="18" height="11" rx="2"/><path d="M7 10V7a5 5 0 0 1 10 0v3"/><circle cx="12" cy="15" r="1.5"/></svg>
+                    </button>
+                  </div>
+                  <span class="rail-user-avatar" role="img" aria-label="Signed , Claims Manager">
+                    <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#FFF3CD"/><circle cx="16" cy="12" r="5.2" fill="#D97706"/><path d="M5.5 29c1.6-5.6 5.3-8.3 10.5-8.3S24.9 23.4 26.5 29z" fill="#D97706"/></svg>
+                  </span>
+                </aside>
+
+                <!-- Main workspace panel -->
+                <div class="workspace-main">
+                  <div class="workspace-header">
+                    <div class="workspace-user-intro">
+                      <div class="orb-avatar" aria-hidden="true"><div class="orb-avatar-inner"></div></div>
+                      <div>
+                        <h2 class="workspace-greeting">Hi, Sir!</h2>
+                        <p class="workspace-hint" id="workspaceHint">Select a forensic pipeline module to inspect live extraction</p>
+                      </div>
+                    </div>
+                    <div id="workspaceBackWrapper"></div>
+                  </div>
+
+                  <div class="workspace-content">
+                    <div class="action-cards-grid" id="workspaceCardsGrid">
+                      <button type="button" class="action-card" data-preset="upload-docs" aria-label="Vehicle and identity documents">
+                        <div class="action-card-text">
+                          <h3>Vehicle &amp; identity docs</h3>
+                          <p>Upload RC books, fitness certs, permits &amp; driver licenses.</p>
+                        </div>
+                        <div class="action-card-visual" aria-hidden="true">
+                          <div class="doc-dark"><div class="doc-line light"></div><div class="doc-line"></div><div class="doc-line gold"></div></div>
+                          <div class="doc-white"><div class="doc-head"><span class="doc-dot gold"></span><span class="doc-line short"></span></div><div class="doc-line"></div><div class="doc-line mid"></div><div class="doc-line gold-subtle"></div><span class="doc-pdf-label">PDF</span></div>
+                        </div>
+                      </button>
+
+                      <button type="button" class="action-card" data-preset="ocr-translate" aria-label="Police FIR and medical records">
+                        <div class="action-card-text">
+                          <h3>Police FIR &amp; medical</h3>
+                          <p>Parse FIRs, hospital admission stamps &amp; discharge bills.</p>
+                        </div>
+                        <div class="action-card-visual" aria-hidden="true">
+                          <span class="stamp-gold">FIR</span>
+                          <span class="stamp-white">OCR</span>
+                        </div>
+                      </button>
+
+                      <button type="button" class="action-card" data-preset="fraud-audit" aria-label="Discrepancy and fraud audit">
+                        <div class="action-card-text">
+                          <h3>Discrepancy &amp; fraud audit</h3>
+                          <p>Verify license dates, garage spares &amp; Genuine / Suspicious tags.</p>
+                        </div>
+                        <div class="action-card-visual" aria-hidden="true">
+                          <div class="audit-visual-box">
+                            <span class="audit-radar-ring"></span>
+                            <div class="audit-chip-stack">
+                              <span class="audit-chip audit-chip-flagged">
+                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                                <span>Flagged</span>
+                              </span>
+                              <span class="audit-chip audit-chip-genuine">
+                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+                                <span>Genuine</span>
+                              </span>
+                            </div>
+                            <div class="audit-lens-badge" title="Forensic Discrepancy Lens">
+                              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.3-4.3"/>
+                                <path d="m8 11 2 2 4-4"/>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+
+                      <button type="button" class="action-card" data-preset="damage-evidence" aria-label="Site and damage evidence">
+                        <div class="action-card-text">
+                          <h3>Site &amp; damage evidence</h3>
+                          <p>Hash geotagged scene photos with SHA-256 chain of custody.</p>
+                        </div>
+                        <div class="action-card-visual" aria-hidden="true">
+                          <span class="evidence-photo-box"><img src="./assets/images/hero_damage_evidence_1795435760310.jpg" alt="" /></span>
+                          <span class="evidence-add">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+                          </span>
+                          <span class="evidence-shield">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+                          </span>
+                        </div>
+                      </button>
+                    </div>
+
+                    <div class="extraction-result-panel" id="workspaceResultPanel" style="display:none;" data-testid="ocr-extraction-result"></div>
+                    <div class="vault-list-container" id="workspaceVaultPanel" style="display:none;"></div>
+                  </div>
+
+                  <form class="workspace-command-bar" id="workspacePromptForm">
+                    <label class="sr-only" for="workspacePrompt">Ask OS2 Reports to analyze a claim document</label>
+                    <input id="workspacePrompt" type="text" placeholder="Ask OS2 Reports to check FIR stamps, audit garage invoices, or hash scene photos..." />
+                    <button type="submit" aria-label="Run AI document extraction">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3-column value strip -->
+          <div class="hv-value-strip">
+            <div class="hv-value-item">
+              <span class="hv-value-icon hv-icon-orange">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m13 2-3 8h7l-9 12 3-8H4l9-12Z"/></svg>
+              </span>
+              <div><h3>&lt; 5 Min turnaround</h3><p>Asynchronous OCR and multimodal extraction transform raw PDFs, PNGs, JPGs, and TIFFs into structured draft reports in minutes.</p></div>
+            </div>
+            <div class="hv-value-item">
+              <span class="hv-value-icon hv-icon-blue">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+              </span>
+              <div><h3>SHA-256 evidence vault</h3><p>Magic-byte validation and cryptographic hash commitments protect every uploaded document inside isolated tenant storage.</p></div>
+            </div>
+            <div class="hv-value-item">
+              <span class="hv-value-icon hv-icon-teal">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 1.9 5.8 5.8 1.9-5.8 1.9L12 18l-1.9-5.4L4.3 10.7l5.8-1.9L12 3Z"/><path d="m19 16 .8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16Z"/></svg>
+              </span>
+              <div><h3>One-click DOCX &amp; PDF</h3><p>Compiles 10–20 page standardized investigation deliverables with custom letterheads, embedded evidence tables, and manager sign-off.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Architecture pillars marquee -->
+      <section class="marq-section">
+        <div class="container">
+          <p class="marq-intro">Enterprise forensic architecture for insurance carriers, fraud analysts, and field investigation teams</p>
+          <div class="marq-window">
+            <div class="marq-track">
+              <span class="marq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>SHA-256 Evidence Chain</span>
+              <span class="marq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m12 2 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5M3 17l9 5 9-5"/></svg>Fail-Closed Multi-Tenancy</span>
+              <span class="marq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 9v12"/></svg>Dual-Layer OCR &amp; AI</span>
+              <span class="marq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15 9-2 4-4 2 2-4 4-2Z"/></svg>Automated Discrepancy Audit</span>
+              <span class="marq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m12 2 8 10-8 10L4 12 12 2Z"/><path d="M4 12h16"/></svg>Custom DOCX &amp; PDF Templates</span>
+              <span class="marq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m12 2 9 5v10l-9 5-9-5V7l9-5Z"/><path d="M9 9h6v6H9z"/></svg>Anti-Jailbreak AI Defense</span>
+              <span class="marq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Immutable AuditLog</span>
+              <span class="marq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>SHA-256 Evidence Chain</span>
+              <span class="marq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m12 2 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5M3 17l9 5 9-5"/></svg>Fail-Closed Multi-Tenancy</span>
+              <span class="marq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 9v12"/></svg>Dual-Layer OCR &amp; AI</span>
+              <span class="marq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15 9-2 4-4 2 2-4 4-2Z"/></svg>Automated Discrepancy Audit</span>
+              <span class="marq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m12 2 8 10-8 10L4 12 12 2Z"/><path d="M4 12h16"/></svg>Custom DOCX &amp; PDF Templates</span>
+              <span class="marq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m12 2 9 5v10l-9 5-9-5V7l9-5Z"/><path d="M9 9h6v6H9z"/></svg>Anti-Jailbreak AI Defense</span>
+              <span class="marq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Immutable AuditLog</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why OS2 Reports — traditional workflow vs integrated AI pipeline -->
+      <section id="why-os2reports" class="why-section">
+        <div class="container">
+          <div class="why-header reveal-on-scroll">
+            <p class="section-tag">Why OS2 Reports</p>
+            <h2 class="section-title why-title">
+              <span class="ink">Replace manual transcription and fragile folders. </span>
+              <span class="muted">Run one integrated forensic pipeline from raw upload to signed-off deliverable.</span>
+            </h2>
+          </div>
+
+          <div class="why-grid">
+            <div class="why-card why-card-muted reveal-on-scroll">
+              <div class="why-kicker">Traditional workflow</div>
+              <h3 class="why-card-title">Where manual claim investigations stall</h3>
+              <ul class="why-list">
+                <li>Manual transcription of scanned RC books, driver licenses, hospital bills, and police FIRs is slow and error-prone.</li>
+                <li>Fragmented evidence storage risks evidence repudiation and chain-of-custody violations in arbitration or court.</li>
+                <li>Subtle cross-document discrepancies — such as driver name mismatches or backdated hospital records — slip past manual reviews.</li>
+                <li>Drafting 10–20 page standardized Word and PDF investigation reports consumes hours per claim.</li>
+              </ul>
+            </div>
+
+            <div class="why-card why-card-white reveal-on-scroll reveal-delay-1">
+              <div class="why-kicker blue">Integrated AI pipeline</div>
+              <h3 class="why-card-title">How OS2 Reports automates forensic verification</h3>
+              <div class="why-solutions">
+                <div class="why-solution">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+                  <div><strong>Instant Digital Intake</strong><p>Upload entire claim dossiers in PDF, PNG, JPG, TIFF, or Word with automatic magic-byte content validation.</p></div>
+                </div>
+                <div class="why-solution">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+                  <div><strong>Autonomous Document Forensics</strong><p>Asynchronous background workers run high-precision OCR and multimodal forensic extraction simultaneously.</p></div>
+                </div>
+                <div class="why-solution">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+                  <div><strong>Tamper-Evident Evidence Vault</strong><p>Every file receives a cryptographically verifiable SHA-256 checksum inside tenant-isolated storage.</p></div>
+                </div>
+                <div class="why-solution">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+                  <div><strong>One-Click Report Generation</strong><p>Synthesizes structured forensic findings into formatted .docx and .pdf deliverables with embedded evidence logs.</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technology / End-to-end workflow section -->
+      <section id="technology" class="technology-section wg-section">
+        <span id="workflow-guide" class="wg-anchor" aria-hidden="true"></span>
+        <div class="container">
+          <div class="wg-header reveal-on-scroll">
+            <p class="section-tag">End-to-end workflow</p>
+            <h2 class="section-title wg-title">
+              <span class="ink">Six deterministic stages from intake to sign-off. </span>
+              <span class="muted">Every claim transitions cleanly through tenant onboarding, SHA-256 hashing, dual-layer OCR, discrepancy audit, and manager approval.</span>
+            </h2>
+          </div>
+
+          <div class="wg-layout">
+            <!-- Sticky chapter rail -->
+            <aside class="wg-rail" aria-label="6-step claim workflow">
+              <nav class="wg-rail-nav">
+                <button type="button" class="wg-rail-btn is-active" data-chapter="claim-intake"><span>01. Claim Intake</span><small>Draft</small></button>
+                <button type="button" class="wg-rail-btn" data-chapter="evidence-hashing"><span>02. Upload &amp; Hashing</span><small>Documents Uploaded</small></button>
+                <button type="button" class="wg-rail-btn" data-chapter="ocr-extraction"><span>03. OCR &amp; AI Parsing</span><small>OCR Complete</small></button>
+                <button type="button" class="wg-rail-btn" data-chapter="fraud-discrepancy"><span>04. Fraud &amp; Audit</span><small>Review Required</small></button>
+                <button type="button" class="wg-rail-btn" data-chapter="investigator-review"><span>05. Investigator Audit</span><small>Ready for Report</small></button>
+                <button type="button" class="wg-rail-btn" data-chapter="manager-signoff"><span>06. Report &amp; Sign-Off</span><small>Completed</small></button>
+              </nav>
+            </aside>
+
+            <!-- Scrolling showcase chapters -->
+            <div class="wg-chapters">
+              <!-- Step 01 -->
+              <article id="claim-intake" class="wg-chapter" data-chapter="claim-intake">
+                <h3 class="wg-step-title"><span class="ink">Organization onboarding &amp; claim intake.</span> <span class="muted">Managers configure their isolated company workspace and approve field investigators before access is granted. Register claims with policy, vehicle, and loss particulars.</span></h3>
+                <div class="wg-panel wg-panel-soft">
+                  <div class="wg-two-col">
+                    <div class="wg-inner-card">
+                      <div class="wg-card-head"><strong>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m19 8 2 2 4-4"/></svg>
+                        Tenant Access Control
+                      </strong><span class="mono">Fail-Closed</span></div>
+                      <div class="wg-kv-list">
+                        <div><span>Company Workspace</span><b class="mono">tenant_84a9</b></div>
+                        <div><span>Manager Onboarding Gate</span><b class="blue">Affirmative Approval</b></div>
+                        <div><span>Cross-Tenant Query Policy</span><b class="mono">403 Forbidden + AuditLog</b></div>
+                      </div>
+                    </div>
+                    <div class="wg-inner-card">
+                      <div class="wg-card-head"><strong>New Claim Registration</strong><span class="mono blue">Draft</span></div>
+                      <div class="wg-kv-grid">
+                        <div><span>Claim Reference</span><b class="mono">MY-20261102-1233AF</b></div>
+                        <div><span>Insured Party</span><b>ARS Engineering</b></div>
+                        <div><span>Vehicle Plate</span><b class="mono">WXA 8942</b></div>
+                        <div><span>Date of Loss</span><b class="mono">04 Nov 2024</b></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Step 02 -->
+              <article id="evidence-hashing" class="wg-chapter" data-chapter="evidence-hashing">
+                <h3 class="wg-step-title"><span class="ink">Forensic document upload with SHA-256 hashing.</span> <span class="muted">Upload RC books, driver licenses, police FIRs, hospital discharge records, garage estimates, and geotagged scene photos — validated and cryptographically hashed on arrival.</span></h3>
+                <div class="wg-panel wg-panel-soft">
+                  <div class="wg-inner-card wg-vault">
+                    <div class="wg-vault-head">
+                      <strong>SHA-256 Forensic Evidence Vault</strong>
+                      <div class="wg-filters" role="group" aria-label="Filter evidence documents">
+                        <button type="button" class="wg-filter is-active" data-filter="All">All</button>
+                        <button type="button" class="wg-filter" data-filter="Vehicle">Vehicle</button>
+                        <button type="button" class="wg-filter" data-filter="Identity &amp; Legal">Identity &amp; Legal</button>
+                        <button type="button" class="wg-filter" data-filter="Medical &amp; Financial">Medical &amp; Financial</button>
+                        <button type="button" class="wg-filter" data-filter="Site Evidence">Site Evidence</button>
+                      </div>
+                    </div>
+                    <div class="wg-vault-list" id="wgVaultList">
+                      <div class="wg-vault-row" data-category="Vehicle"><div><div class="wg-vault-name">RC_Certificate_Fitness_Permit.pdf <span>·</span> <small>Vehicle</small></div><div class="wg-vault-detail">Vehicle registration, chassis match, commercial permit &amp; fitness validity confirmed</div></div><div class="wg-vault-meta"><span class="mono">sha256:9f86d0...a14c</span><span>·</span><b class="blue">Hashed &amp; Verified</b></div></div>
+                      <div class="wg-vault-row" data-category="Identity &amp; Legal"><div><div class="wg-vault-name">Police_FIR_and_Driver_License.pdf <span>·</span> <small>Identity &amp; Legal</small></div><div class="wg-vault-detail">Driver license validity verified on date of loss · FIR statement indexed</div></div><div class="wg-vault-meta"><span class="mono">sha256:4b2277...08e9</span><span>·</span><b class="blue">Parsed</b></div></div>
+                      <div class="wg-vault-row" data-category="Medical &amp; Financial"><div><div class="wg-vault-name">Hospital_Admission_and_Garage_Bill.pdf <span>·</span> <small>Medical &amp; Financial</small></div><div class="wg-vault-detail">Hospital admission stamp contradicts reported accident time by 35 min</div></div><div class="wg-vault-meta"><span class="mono">sha256:e3b0c4...98fc</span><span>·</span><b class="amber">Flagged</b></div></div>
+                      <div class="wg-vault-row" data-category="Site Evidence"><div><div class="wg-vault-name">Geotagged_Scene_and_Damage_Photos.zip <span>·</span> <small>Site Evidence</small></div><div class="wg-vault-detail">14 inspection images · EXIF coordinates verified &amp; mapped to report annex</div></div><div class="wg-vault-meta"><span class="mono">sha256:7d865e...21bb</span><span>·</span><b class="blue">Hashed &amp; Verified</b></div></div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Step 03 -->
+              <article id="ocr-extraction" class="wg-chapter" data-chapter="ocr-extraction">
+                <h3 class="wg-step-title"><span class="ink">Asynchronous OCR &amp; multimodal extraction.</span> <span class="muted">Adaptive image deskewing, multi-lingual OCR engines, and prompt-injection-hardened AI parse dates, currency totals, hospital names, endorsements, and injury descriptions into structured JSON.</span></h3>
+                <div class="wg-panel wg-panel-stone">
+                  <div class="wg-three-col">
+                    <div class="wg-col-card">
+                      <div class="wg-col-head"><strong>01 · Image Preprocessing</strong><span class="mono">OpenCV Pipeline</span></div>
+                      <div class="wg-mini-card"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 17"/></svg>Contrast &amp; Deskewing</div><p>Restores tilted mobile scans</p></div>
+                      <div class="wg-mini-card"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg>Magic-Byte Validation</div><p>PDF, PNG, JPG, TIFF · 25 MB</p></div>
+                    </div>
+                    <div class="wg-col-card">
+                      <div class="wg-col-head"><strong>02 · Dual-Layer Extraction</strong><span class="mono">Async Workers</span></div>
+                      <div class="wg-mini-card"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>Multi-Lingual OCR Engine</div><p>Printed &amp; handwritten text</p></div>
+                      <div class="wg-mini-card"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>Delimited Prompt Guard</div><p>Anti-jailbreak text isolation</p></div>
+                    </div>
+                    <div class="wg-col-card">
+                      <div class="wg-col-head"><strong>03 · Structured JSON</strong><span class="mono">Deterministic Regex</span></div>
+                      <div class="wg-mini-card"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m8 3-5 9 5 9M16 3l5 9-5 9"/></svg>Dates, Stamps &amp; Totals</div><p>Hospital, FIR &amp; garage bills</p></div>
+                      <div class="wg-mini-card"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>Endorsements &amp; Injuries</div><p>Mapped to dossier schema</p></div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Step 04 -->
+              <article id="fraud-discrepancy" class="wg-chapter" data-chapter="fraud-discrepancy">
+                <h3 class="wg-step-title"><span class="ink">Cross-document discrepancy &amp; fraud analysis.</span> <span class="muted">Automatically validates driver license validity on the exact date of loss, flags hospital stamp contradictions, and reconciles itemized garage spares against repair invoice totals.</span></h3>
+                <div class="wg-panel wg-panel-soft wg-stack">
+                  <div class="wg-inner-card">
+                    <div class="wg-card-head"><strong>Automated Cross-Document Forensic Audit</strong><span class="mono">MY-20261102-1233AF</span></div>
+                    <div class="wg-check-list">
+                      <div class="wg-check-row is-done"><span class="wg-checkbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg></span><span class="wg-check-text">Driver license validity verified on exact date of loss (04 Nov 2024)</span><span class="wg-check-meta">License Check <span>·</span> <b class="blue">Verified</b></span></div>
+                      <div class="wg-check-row is-flagged" id="wgConflictRow"><span class="wg-checkbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg></span><span class="wg-check-text">Hospital admission stamp vs. Police FIR incident timestamp (35 min delta)</span><span class="wg-check-meta">Timestamp Audit <span>·</span> <b class="amber" id="wgConflictState">Flagged</b></span></div>
+                      <div class="wg-check-row is-done"><span class="wg-checkbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg></span><span class="wg-check-text">Itemized garage spare parts reconciled against final repair bill total</span><span class="wg-check-meta">Financial Math <span>·</span> <b class="blue">Verified</b></span></div>
+                    </div>
+                  </div>
+                  <div class="wg-two-col">
+                    <div class="wg-inner-card wg-resolve-card">
+                      <div class="wg-resolve-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 17h.01"/></svg><strong id="wgResolveTitle">1 discrepancy requires investigator review</strong></div>
+                      <p id="wgResolveCopy">Hospital admission stamp (09:15 MYT) differs from Police FIR incident time (08:40 MYT).</p>
+                    </div>
+                    <div class="wg-inner-card wg-readiness-card">
+                      <div class="wg-readiness-label">Forensic audit readiness</div>
+                      <div class="wg-readiness-value" id="wgReadinessValue">88%</div>
+                      <div class="wg-progress-track"><div class="wg-progress-fill" id="wgProgressFill" style="width:88%"></div></div>
+                      <div class="wg-readiness-foot mono" id="wgReadinessFoot">2 of 3 cross-checks cleared · Dual-Layer Audit</div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Step 05 -->
+              <article id="investigator-review" class="wg-chapter" data-chapter="investigator-review">
+                <h3 class="wg-step-title"><span class="ink">Interactive workspace audit &amp; surveyor verdict.</span> <span class="muted">Review extracted fields side by side, enter surveyor remarks, attach a Genuine, Suspicious, or Repudiate recommendation, and submit the file to the Manager Queue.</span></h3>
+                <div class="wg-panel wg-panel-soft">
+                  <div class="wg-inner-card">
+                    <div class="wg-card-head">
+                      <div><strong>Investigator Claim Workspace · Surveyor Recommendation</strong><p>Review extracted JSON fields side-by-side and attach your formal verdict</p></div>
+                      <span class="mono">AuditLog active</span>
+                    </div>
+                    <div class="wg-verdict-grid" role="group" aria-label="Surveyor recommendation">
+                      <button type="button" class="wg-verdict-card is-active" data-verdict="Genuine"><strong>Genuine <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg></strong><p>Evidence consistent across FIR, RC book &amp; garage estimate.</p></button>
+                      <button type="button" class="wg-verdict-card" data-verdict="Suspicious"><strong>Suspicious <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg></strong><p>Requires further field inquiry or hospital verification.</p></button>
+                      <button type="button" class="wg-verdict-card" data-verdict="Repudiate"><strong>Repudiate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg></strong><p>Material misrepresentation or invalid policy coverage.</p></button>
+                    </div>
+                    <div class="wg-panel-foot"><span>Selected recommendation: <b id="wgSelectedVerdict">Genuine</b></span></div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Step 06 -->
+              <article id="manager-signoff" class="wg-chapter" data-chapter="manager-signoff">
+                <h3 class="wg-step-title"><span class="ink">Automated .docx &amp; .pdf synthesis with manager sign-off.</span> <span class="muted">Compile custom-branded Word and PDF investigation dossiers complete with SHA-256 evidence logs. Managers inspect the full audit trail and issue affirmative approval or feedback.</span></h3>
+                <div class="wg-panel wg-panel-cloud">
+                  <div class="wg-report-card">
+                    <div class="wg-card-head"><div class="mono"><span class="blue">PDF</span><span>·</span><span>Verdict: <b id="wgReportVerdict">Genuine</b></span></div><div class="wg-lock"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> SHA-256 Evidence Log Embedded</div></div>
+                    <div class="wg-report-title-row">
+                      <h4>Finalized Forensic Investigation Dossier</h4>
+                      <div class="wg-export-tabs" role="group" aria-label="Export format">
+                        <button type="button" class="wg-export-tab is-active" data-format="pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg> PDF</button>
+                        <button type="button" class="wg-export-tab" data-format="docx"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 7h8M8 12h8M8 17h5"/></svg> DOCX</button>
+                      </div>
+                    </div>
+                    <div class="wg-report-includes">
+                      <div class="blue">Included in compiled <span id="wgExportLabel">PDF</span> deliverable</div>
+                      <ul><li>Corporate letterhead, signatory stamps, and legal disclaimers</li><li>Cross-verified OCR findings, discrepancy audit &amp; photo annex</li><li>Immutable SHA-256 digest table for every source evidence file</li></ul>
+                    </div>
+                    <div class="wg-panel-foot"><span class="wg-signoff-state"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg><span id="wgSignoffLabel">Ready for Manager sign-off</span></span></div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Automated Report Synthesis Section (Spotlight Split) -->
+      <section id="synthesis" class="synthesis-section">
+        <div class="container">
+          <div class="synthesis-grid">
+            <div class="synthesis-copy reveal-on-scroll">
+              <p class="section-tag synthesis-tag">Automated Synthesis</p>
+              <h2 class="synthesis-title">
+                <span class="ink">Defensible reports drafted in minutes. </span>
+                <span class="muted">
+                  OS2 Reports validates every scan, flags anomalies, and compiles custom-branded
+                  deliverables ready for management sign-off.
+                </span>
+              </h2>
+
+              <div class="synthesis-features">
+                <div class="synthesis-feature">
+                  <div class="synthesis-feature-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                      <polyline points="14 2 14 8 20 8" />
+                      <line x1="16" y1="13" x2="8" y2="13" />
+                      <line x1="16" y1="17" x2="8" y2="17" />
+                      <line x1="10" y1="9" x2="8" y2="9" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="synthesis-feature-title">Dual-Layer OCR &amp; Cross-Document Audit</h3>
+                    <p class="synthesis-feature-desc">
+                      Deterministic regex rules paired with multimodal AI validate license dates, hospital stamps, and itemized repair invoices.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="synthesis-feature">
+                  <div class="synthesis-feature-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                      <path d="m9 12 2 2 4-4" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="synthesis-feature-title">Custom Jinja2 / DOCX &amp; Headless PDF Templates</h3>
+                    <p class="synthesis-feature-desc">
+                      Embed corporate letterheads, signatory blocks, surveyor verdicts, and full SHA-256 evidence logs in every deliverable.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="synthesis-feature">
+                  <div class="synthesis-feature-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="synthesis-feature-title">Fail-Closed Multi-Tenant Security &amp; AuditLog</h3>
+                    <p class="synthesis-feature-desc">
+                      Strict company partitioning blocks cross-tenant access with 403 Forbidden while recording every view, approval, and download.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Atmospheric Framed Notification Card -->
+            <div class="synthesis-visual reveal-on-scroll">
+              <div class="synthesis-backdrop-frame">
+
+                <div class="synthesis-card">
+                  <div class="synthesis-card-head">
+                    <div class="synthesis-avatar-badge">OS2</div>
+                    <div>
+                      <div class="synthesis-card-title">
+                        OS2 Reports <span class="synthesis-channel">#manager-review-queue</span>
+                      </div>
+                      <div class="synthesis-card-subtitle">Operations Command Center</div>
+                    </div>
+                  </div>
+
+                  <div class="synthesis-card-body">
+                    <div class="synthesis-claim-lead">
+                      MY-20261102-1233AF &middot; Forensic dossier compiled with SHA-256 chain
+                    </div>
+
+                    <div class="synthesis-meta-rows">
+                      <div class="synthesis-meta-row">
+                        <span class="synthesis-meta-label label-blue">Policyholder</span>
+                        <span class="synthesis-meta-val">ARS Engineering (Corporate) &middot; Driver: Ian Mcowen Mail</span>
+                      </div>
+                      <div class="synthesis-meta-row">
+                        <span class="synthesis-meta-label label-amber">Audit Flag</span>
+                        <span class="synthesis-meta-val">Hospital admission stamp verified against FIR timestamp &middot; Verdict: Genuine</span>
+                      </div>
+                      <div class="synthesis-meta-row">
+                        <span class="synthesis-meta-label label-dark">Deliverables</span>
+                        <span class="synthesis-meta-val">Custom letterhead .docx &amp; print-ready .pdf with embedded evidence hashes.</span>
+                      </div>
+                    </div>
+
+                    <div class="synthesis-card-foot">
+                      <span class="synthesis-hash">sha256:e3b0c4...98fc</span>
+                      <button
+                        type="button"
+                        class="synthesis-action-btn"
+                        id="synthesisSandboxBtn"
+                      >
+                        Try OCR sandbox &rarr;
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Workspaces by role (replaces the old Platform & Workspaces bento grid) -->
+      <section id="capabilities" class="capabilities-section rw-section">
+        <div class="container">
+          <div class="rw-header reveal-on-scroll">
+            <p class="section-tag rw-tag">Workspaces by role</p>
+            <h2 class="section-title rw-title">
+              <span class="ink">Purpose-built portals for investigators and managers. </span>
+              <span class="muted">Clear separation of duties with affirmative access approvals and end-to-end audit trails.</span>
+            </h2>
+          </div>
+
+          <div class="rw-grid">
+            <article class="rw-card reveal-on-scroll">
+              <div>
+                <div class="rw-card-top">
+                  <span class="mono">01</span>
+                  <span class="rw-card-kind">Field &amp; Forensic Portal</span>
+                </div>
+                <h3 class="rw-role">Investigator Workspace</h3>
+                <p class="rw-subtitle">Built for field surveyors, claim handlers, and forensic analysts.</p>
+                <ul class="rw-features">
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>Quick claim creation with policy &amp; loss particulars</span></li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>Drag-and-drop SHA-256 forensic document vault</span></li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>OCR extraction verification &amp; field editing</span></li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>Automated anomaly, discrepancy &amp; fraud flagging</span></li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>Report preview, surveyor remarks &amp; submission</span></li>
+                </ul>
+              </div>
+              <div class="rw-card-bottom">
+                <a class="rw-btn rw-btn-dark" href="https://d105tkku040mlv.cloudfront.net/login?role=employee" target="_blank" rel="noreferrer">
+                  Launch Investigator Portal
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="rw-card reveal-on-scroll reveal-delay-1">
+              <div>
+                <div class="rw-card-top">
+                  <span class="mono">02</span>
+                  <span class="rw-card-kind">Command &amp; Sign-Off Portal</span>
+                </div>
+                <h3 class="rw-role">Manager Workspace</h3>
+                <p class="rw-subtitle">Built for claims managers, audit leads, and organization administrators.</p>
+                <ul class="rw-features">
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>Employee roster management &amp; affirmative access approvals</span></li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>Pending claim reviews queue with side-by-side source audit</span></li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>Cross-claim audit telemetry &amp; turnaround visibility</span></li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>Final report sign-off or rejection with structured feedback</span></li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>Fail-closed organization tenant &amp; branding controls</span></li>
+                </ul>
+              </div>
+              <div class="rw-card-bottom">
+                <a class="rw-btn rw-btn-light" href="https://d105tkku040mlv.cloudfront.net/login?role=manager" target="_blank" rel="noreferrer">
+                  Manager Workspace &amp; Onboarding
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section id="faq" class="faq-section">
+        <div class="container">
+          <div class="faq-grid">
+            <div class="faq-left reveal-on-scroll">
+              <h2>Frequently<br />Asked<br />Questions</h2>
+              <p>Find answers to common questions about OCR accuracy, claim forms, and cloud security.</p>
+              <div class="btn-contact">
+                <button type="button" class="btn-primary" id="faqContactBtn">Contact us</button>
+              </div>
+            </div>
+
+            <div class="faq-list" id="faqList">
+              <!-- Item 1 -->
+              <div class="faq-accordion-item">
+                <button type="button" class="faq-accordion-header" aria-expanded="false">
+                  <span class="faq-question">What file formats are supported for evidence upload?</span>
+                  <span class="faq-icon-rotator" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                  </span>
+                </button>
+                <div class="faq-accordion-body">
+                  <div class="faq-accordion-content">
+                    The platform supports single and multi-page PDF documents, JPEG and PNG inspection images, TIFF scans, and Microsoft Word files. Maximum upload size per file is 25 MB with strict magic-byte content validation and SHA-256 hashing.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 (Default Open) -->
+              <div class="faq-accordion-item is-open">
+                <button type="button" class="faq-accordion-header" aria-expanded="true">
+                  <span class="faq-question">How does the system handle poor-quality or handwritten scans?</span>
+                  <span class="faq-icon-rotator" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                  </span>
+                </button>
+                <div class="faq-accordion-body">
+                  <div class="faq-accordion-content">
+                    Our pipeline applies adaptive OpenCV image preprocessing—automatic contrast enhancement and deskewing—paired with PaddleOCR and multimodal vision models to accurately parse degraded scans, handwritten entries, and physical hospital or police stamps.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="faq-accordion-item">
+                <button type="button" class="faq-accordion-header" aria-expanded="false">
+                  <span class="faq-question">Can our investigators see claims from other branches or partner insurers?</span>
+                  <span class="faq-icon-rotator" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                  </span>
+                </button>
+                <div class="faq-accordion-body">
+                  <div class="faq-accordion-content">
+                    No. Fail-closed multi-tenant boundary isolation is enforced across the database, cache, and filesystem layers per organization. Any cross-tenant access attempt is immediately blocked and recorded in the tamper-resistant security AuditLog.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="faq-accordion-item">
+                <button type="button" class="faq-accordion-header" aria-expanded="false">
+                  <span class="faq-question">Can report templates be customized with our company branding?</span>
+                  <span class="faq-icon-rotator" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                  </span>
+                </button>
+                <div class="faq-accordion-body">
+                  <div class="faq-accordion-content">
+                    Yes. The report synthesis engine supports custom DOCX templates so each insurance organization can embed its official letterhead, signatory stamps, legal disclaimers, evidence tables, and custom field layouts across both Word and PDF outputs.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials & Waitlist CTA Section -->
+      <section class="testimonials-section">
+        <div class="container">
+          <div class="cta-sky-apricot-gradient testimonials-cta-box reveal-on-scroll">
+            <div class="testimonials-cluster">
+              <!-- Top Subtle Testimonial -->
+              <div class="testimonial-subtle-top">
+                <div style="display:flex; align-items:flex-start; gap:12px;">
+                  <span class="testimonial-avatar dummy-avatar" role="img" aria-label="Ananya Rao photo placeholder" style="height:32px; width:32px;"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#E2E8F0"/><circle cx="16" cy="12" r="5.2" fill="#94A3B8"/><path d="M5.5 29c1.6-5.6 5.3-8.3 10.5-8.3S24.9 23.4 26.5 29z" fill="#94A3B8"/></svg></span>
+                  <p style="font-size:12.5px; line-height:1.4; color:#404040;">
+                    Every RC book, FIR, and hospital record gets a SHA-256 hash on upload—giving our legal team a court-defensible evidence chain.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Subtle Sides Testimonials -->
+              <div class="testimonial-subtle-sides">
+                <div class="testimonial-subtle-card">
+                  <div style="display:flex; align-items:flex-start; gap:12px;">
+                    <span class="testimonial-avatar dummy-avatar" role="img" aria-label="Elena Rostova photo placeholder" style="height:28px; width:28px;"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#E2E8F0"/><circle cx="16" cy="12" r="5.2" fill="#94A3B8"/><path d="M5.5 29c1.6-5.6 5.3-8.3 10.5-8.3S24.9 23.4 26.5 29z" fill="#94A3B8"/></svg></span>
+                    <p style="font-size:12px; line-height:1.4; color:#404040;">
+                      Dual-layer discrepancy checks caught backdated hospital admission stamps and invalid driver licenses before payout.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="testimonial-subtle-card">
+                  <div style="display:flex; align-items:flex-start; gap:12px;">
+                    <span class="testimonial-avatar dummy-avatar" role="img" aria-label="Marcus Reid photo placeholder" style="height:28px; width:28px;"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#E2E8F0"/><circle cx="16" cy="12" r="5.2" fill="#94A3B8"/><path d="M5.5 29c1.6-5.6 5.3-8.3 10.5-8.3S24.9 23.4 26.5 29z" fill="#94A3B8"/></svg></span>
+                    <p style="font-size:12px; line-height:1.4; color:#404040;">
+                      OpenCV deskewing and PaddleOCR parse faint workshop estimates and regional police reports in under five minutes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Featured 2 Testimonials + Center Optical Orb -->
+              <div class="featured-testimonials-row">
+                <!-- Left Featured Card -->
+                <article class="testimonial-featured-card">
+                  <p>
+                    Our investigators process hundreds of motor and liability claims every month with OS2 Reports. Turning 30-page evidence packets into branded DOCX and PDF reports in under five minutes cut turnaround from days to hours.
+                  </p>
+                  <div class="testimonial-author-row">
+                    <span class="testimonial-avatar dummy-avatar" role="img" aria-label="Darius Salehipour photo placeholder"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#E2E8F0"/><circle cx="16" cy="12" r="5.2" fill="#94A3B8"/><path d="M5.5 29c1.6-5.6 5.3-8.3 10.5-8.3S24.9 23.4 26.5 29z" fill="#94A3B8"/></svg></span>
+                    <div>
+                      <div class="author-name">Darius Salehipour</div>
+                      <div class="author-role">Head of Claims · Pacific Mutual</div>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Center Optical Glass Lens Orb -->
+                <div class="center-orb-wrapper">
+                  <div class="blue-orb-lens center-orb" aria-hidden="true">
+                    <div class="center-orb-inner"></div>
+                    <div class="center-orb-highlight"></div>
+                  </div>
+                </div>
+
+                <!-- Right Featured Card -->
+                <article class="testimonial-featured-card">
+                  <p>
+                    The Manager Workspace gives us fail-closed tenant isolation, investigator onboarding approvals, cross-claim audit telemetry, and one-click final sign-off backed by an immutable AuditLog.
+                  </p>
+                  <div class="testimonial-author-row">
+                    <span class="testimonial-avatar dummy-avatar" role="img" aria-label="Melanie Jackson photo placeholder"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#E2E8F0"/><circle cx="16" cy="12" r="5.2" fill="#94A3B8"/><path d="M5.5 29c1.6-5.6 5.3-8.3 10.5-8.3S24.9 23.4 26.5 29z" fill="#94A3B8"/></svg></span>
+                    <div>
+                      <div class="author-name">Melanie Jackson</div>
+                      <div class="author-role">Claims Manager · Meridian Fleet</div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- Lower Waitlist Form -->
+            <div class="waitlist-container">
+              <h2>
+                Join forward-thinking<br />
+                claims leaders
+              </h2>
+
+              <!-- Form State -->
+              <form class="waitlist-form" id="waitlistForm" novalidate>
+                <div class="waitlist-input-group">
+                  <label for="waitlistEmailInput" class="sr-only">Your work email address</label>
+                  <input
+                    type="email"
+                    id="waitlistEmailInput"
+                    class="waitlist-input"
+                    placeholder="Your work email address"
+                  />
+                  <button type="submit" class="btn-primary waitlist-btn">Notify</button>
+                </div>
+                <p class="waitlist-error" id="waitlistError" style="display:none;" role="alert"></p>
+              </form>
+
+              <!-- Confirmation State -->
+              <div class="waitlist-confirmation" id="waitlistConfirmation" style="display:none;" data-testid="waitlist-confirmation">
+                <div style="display:flex; align-items:center; gap:12px;">
+                  <span style="color:#16a34a; flex-shrink:0;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  </span>
+                  <div>
+                    <div style="font-size:14px; font-weight:600; color:var(--color-primary);">You're on the priority access list</div>
+                    <div style="font-size:12.5px; color:#525252;">
+                      We'll reach out to <strong id="waitlistConfirmedEmail"></strong> shortly.
+                    </div>
+                  </div>
+                </div>
+                <button type="button" id="btnWaitlistReset" style="font-size:12.5px; font-weight:500; color:#525252; white-space:nowrap;">Add another</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top-grid">
+          <!-- Brand Column -->
+          <div class="footer-brand-col">
+            <a href="#top" class="brand-mark" aria-label="OS2 Reports Home">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" class="shrink-0" aria-hidden="true">
+                <circle cx="14" cy="14" r="12" fill="url(#cfOrbA)" />
+                <path
+                  d="M14 5.5C9.30558 5.5 5.5 9.30558 5.5 14C5.5 18.6944 9.30558 22.5 14 22.5C17.1 22.5 19.81 20.84 21.3 18.36"
+                  stroke="#0a0a0a"
+                  stroke-width="2.6"
+                  stroke-linecap="round"
+                />
+                <circle cx="14" cy="14" r="4.2" fill="url(#cfOrbB)" stroke="#0a0a0a" stroke-width="1.6" />
+              </svg>
+              <span>OS2 Reports</span>
+            </a>
+            <p class="footer-brand-desc">
+              By OS2 Studio · AI forensic insurance investigation, dual-layer OCR &amp; tamper-evident SHA-256 reporting.
+            </p>
+          </div>
+
+          <!-- Column 1: Portals -->
+          <div class="footer-col">
+            <h3>Portals</h3>
+            <ul class="footer-links-list">
+              <li><button type="button" class="footer-link" id="footerLoginInvestigator">Investigator Access</button></li>
+              <li><button type="button" class="footer-link" id="footerLoginManager">Manager Workspace</button></li>
+              <li><a href="#technology" class="footer-link">Workflow Guide</a></li>
+              <li><a href="#capabilities" class="footer-link">Role Capabilities</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 2: Pipeline -->
+          <div class="footer-col">
+            <h3>Pipeline</h3>
+            <ul class="footer-links-list">
+              <li><a href="#workspace" class="footer-link">Digital Intake</a></li>
+              <li><a href="#synthesis" class="footer-link">Automated Synthesis</a></li>
+              <li><a href="#technology" class="footer-link">Dual-Layer OCR &amp; AI</a></li>
+              <li><a href="#capabilities" class="footer-link">DOCX &amp; PDF Reports</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 5: Social & Contact -->
+          <div class="footer-social-col">
+            <div class="social-icons-row">
+              <a href="#workspace" class="social-link" aria-label="OS2 Reports on X">X</a>
+              <a href="#capabilities" class="social-link" aria-label="OS2 Reports on LinkedIn">in</a>
+            </div>
+            <button type="button" class="footer-contact-btn" id="footerContactBtn">
+              Contact us
+            </button>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+          <p>&copy; 2026 OS2 Reports by OS2 Studio. All rights reserved.</p>
+          <div class="footer-legal-links">
+            <button type="button" class="footer-legal-btn" id="footerPrivacyBtn">Privacy Policy</button>
+            <button type="button" class="footer-legal-btn" id="footerTermsBtn">Terms</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Universal Action Modal -->
+    <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalHeading">
+      <div class="modal-backdrop" id="modalBackdrop"></div>
+      <div class="modal-container" id="modalContainer">
+        <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <!-- Motion libraries: Lenis smooth scroll + GSAP ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+
+    <!-- Production JavaScript (deferred to eliminate main-thread blocking) -->
+    <script src="./js/app.js" defer></script>
+    <script src="./js/new-sections.js" defer></script>
+    <script src="./js/scroll-animations.js" defer></script>
+  </body>
+</html>

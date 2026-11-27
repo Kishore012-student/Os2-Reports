@@ -35,3 +35,7 @@ __probe*.html
 # Editor backups
 *.bak
 *.orig
+
+# Backups
+backup/
+backups/

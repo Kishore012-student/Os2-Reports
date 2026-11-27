@@ -21,99 +21,99 @@
   const PRESET_RESULTS = {
     'upload-docs': {
       id: 'upload-docs',
-      sourceLabel: 'RC Book, Fitness Cert, Permit & Driver License Packet (18 MB PDF)',
-      formCode: 'OCR COMPLETE · TENANT-ISOLATED VAULT',
+      sourceLabel: 'Registration, Compliance & Agreement Document Packet (18 MB PDF)',
+      formCode: 'OCR COMPLETE · PRIVATE WORKSPACE',
       policyNumber: 'AEKK1236016',
-      claimantName: 'ARS Engineering (Contact: Ian Mcowen Mail)',
+      claimantName: 'ARS Engineering (Contact: Ian Mcowen)',
       incidentDate: '04 Nov 2024',
-      estimatedAmount: '< 5 Min Synthesis · DOCX & PDF',
-      detectedLanguage: 'PaddleOCR + Multimodal Vision',
+      estimatedAmount: '< 5 Min Synthesis · Single PDF',
+      detectedLanguage: 'Smart AI Reader',
       confidenceScore: 99.1,
-      cloudVaultId: 'sha256:9f84c2e1...a7b0 · /data/dossiers/REF-20261102',
+      cloudVaultId: 'sha256:9f84c2e1...a7b0 · /data/projects/REF-20261102',
       summary:
-        'Validated magic bytes, committed SHA-256 digest, and parsed Registration Certificate, Permit, and Driver License validity against the exact Date of Loss.',
+        'Checked file format, pulled out key details, and verified dates and numbers against project records.',
       fields: [
-        { label: 'Policy & Cover', value: 'AEKK1236016 · Active', confidence: '99.4%' },
-        { label: 'Vehicle & RC', value: 'Toyota Hilux · QM8860E', confidence: '99.2%' },
-        { label: 'License on Loss Date', value: 'Flagged · Invalid / Expired', confidence: '99.1%' },
-        { label: 'Evidence Hash', value: 'SHA-256 Verified', confidence: '100%' },
+        { label: 'Agreement & Terms', value: 'AEKK1236016 · Active', confidence: '99.4%' },
+        { label: 'Unit Reference', value: 'Primary Asset · QM8860E', confidence: '99.2%' },
+        { label: 'Credential Validity', value: 'Verified · Current & Valid', confidence: '99.1%' },
+        { label: 'Integrity Check', value: 'SHA-256 Verified', confidence: '100%' },
       ],
     },
     'ocr-translate': {
       id: 'ocr-translate',
-      sourceLabel: 'Police FIR, Hospital Admission & Discharge Summary (Multi-Page)',
+      sourceLabel: 'Delivery Stamp, Statements & Project Records (Multi-Page)',
       formCode: 'DISCREPANCY AUDIT · REVIEW REQUIRED',
       policyNumber: 'VKK9039631',
-      claimantName: 'Azahari Bin Talip · Case Dossier',
+      claimantName: 'Azahari Bin Talip · Project File',
       incidentDate: '04 Nov 2024 · 7:40 AM',
       estimatedAmount: '1 Timestamp Contradiction Flagged',
-      detectedLanguage: 'OpenCV Deskew + Bilingual OCR',
+      detectedLanguage: 'Auto Scan Clean-up',
       confidenceScore: 98.7,
-      cloudVaultId: 'sha256:3c19a7d4...82fe · /data/dossiers/REF-20261102',
+      cloudVaultId: 'sha256:3c19a7d4...82fe · /data/projects/REF-20261102',
       summary:
-        'Extracted Police FIR under S.41(1) RTA 1987 alongside Hospital admission timestamps and discharge notes. Cross-checked admission time against reported accident time.',
+        'Extracted official statements alongside vendor delivery timestamps and verified notes. Cross-checked delivery timeline against purchase record time.',
       fields: [
-        { label: 'FIR Reference', value: 'S.41(1) Road Transport Act', confidence: '99.0%' },
-        { label: 'Hospital Stamp', value: '04 Nov · 08:15 AM (Verified)', confidence: '98.8%' },
+        { label: 'Record Reference', value: 'Official File #8429-A', confidence: '99.0%' },
+        { label: 'Delivery Stamp', value: '04 Nov · 08:15 AM (Verified)', confidence: '98.8%' },
         { label: 'Prompt Boundary', value: 'Injection Defense Passed', confidence: '100%' },
         { label: 'System Status', value: 'review_required', confidence: '98.7%' },
       ],
     },
     'fraud-audit': {
       id: 'fraud-audit',
-      sourceLabel: 'Garage Repair Estimate vs. Itemized Spares Cross-Verification',
+      sourceLabel: 'Vendor Estimate vs. Itemized Invoice Cross-Verification',
       formCode: 'ANOMALY CHECK · ANALYST AUDIT',
       policyNumber: 'MY-20261102-1233AF',
       claimantName: 'Multi-Layer Discrepancy Engine',
       incidentDate: 'Itemized Audit Complete',
-      estimatedAmount: 'Recommendation: Suspicious',
-      detectedLanguage: 'Dual-Layer Regex + AI Forensics',
+      estimatedAmount: 'Recommendation: Flagged',
+      detectedLanguage: 'Automatic Error Check',
       confidenceScore: 99.3,
       cloudVaultId: 'sha256:7d42e0b9...11ac · AuditLog Committed',
       summary:
-        'Cross-verified final garage payment bills against individual itemized spares and policy endorsements. Flagged duplicate labor entry for surveyor remarks and Manager sign-off.',
+        'Cross-verified final billing amounts against itemized vendor invoices. Flagged duplicate labor entry for review and Manager sign-off.',
       fields: [
         { label: 'Invoice Total Check', value: '1 Variance Flagged (-$640)', confidence: '99.4%' },
-        { label: 'Identity Match', value: 'Policyholder vs Driver Split', confidence: '99.6%' },
-        { label: 'Recommendation', value: 'Suspicious · Needs Review', confidence: '99.1%' },
-        { label: 'Deliverable', value: 'Custom DOCX + PDF Ready', confidence: '100%' },
+        { label: 'Identity Match', value: 'Authorized Signee Verified', confidence: '99.6%' },
+        { label: 'Recommendation', value: 'Flagged · Needs Review', confidence: '99.1%' },
+        { label: 'Deliverable', value: 'Single PDF Report Ready', confidence: '100%' },
       ],
     },
     'voice-notes': {
       id: 'voice-notes',
-      sourceLabel: 'Garage Repair Estimate vs. Itemized Spares Cross-Verification',
+      sourceLabel: 'Vendor Estimate vs. Itemized Invoice Cross-Verification',
       formCode: 'ANOMALY CHECK · ANALYST AUDIT',
       policyNumber: 'MY-20261102-1233AF',
       claimantName: 'Multi-Layer Discrepancy Engine',
       incidentDate: 'Itemized Audit Complete',
-      estimatedAmount: 'Recommendation: Suspicious',
-      detectedLanguage: 'Dual-Layer Regex + AI Forensics',
+      estimatedAmount: 'Recommendation: Flagged',
+      detectedLanguage: 'Automatic Error Check',
       confidenceScore: 99.3,
       cloudVaultId: 'sha256:7d42e0b9...11ac · AuditLog Committed',
       summary:
-        'Cross-verified final garage payment bills against individual itemized spares and policy endorsements. Flagged duplicate labor entry for surveyor remarks and Manager sign-off.',
+        'Cross-verified final billing amounts against itemized vendor invoices. Flagged duplicate labor entry for review and Manager sign-off.',
       fields: [
         { label: 'Invoice Total Check', value: '1 Variance Flagged (-$640)', confidence: '99.4%' },
-        { label: 'Identity Match', value: 'Policyholder vs Driver Split', confidence: '99.6%' },
-        { label: 'Recommendation', value: 'Suspicious · Needs Review', confidence: '99.1%' },
-        { label: 'Deliverable', value: 'Custom DOCX + PDF Ready', confidence: '100%' },
+        { label: 'Identity Match', value: 'Authorized Signee Verified', confidence: '99.6%' },
+        { label: 'Recommendation', value: 'Flagged · Needs Review', confidence: '99.1%' },
+        { label: 'Deliverable', value: 'Single PDF Report Ready', confidence: '100%' },
       ],
     },
     'damage-evidence': {
       id: 'damage-evidence',
-      sourceLabel: 'Geotagged Accident Scene & Vehicle Damage Photos (30 Files)',
-      formCode: 'CRYPTOGRAPHIC VAULT · EVIDENCE CHAIN',
+      sourceLabel: 'Geotagged Project Media & Visual Attachments (30 Files)',
+      formCode: 'SECURE STORAGE · VERIFIED ATTACHMENTS',
       policyNumber: 'QM8860E / SYL 405',
-      claimantName: 'Tamper-Evident Scene Appendix',
+      claimantName: 'Verified Media Appendix',
       incidentDate: 'GPS & EXIF Metadata Locked',
-      estimatedAmount: '100% Fail-Closed Tenant Isolation',
-      detectedLanguage: 'Vision AI + SHA-256 Commitment',
+      estimatedAmount: 'Private & Secure Storage',
+      detectedLanguage: 'Organized Media & Photos',
       confidenceScore: 98.9,
       cloudVaultId: 'sha256:b812f4c6...9e30 · Tenant Isolated',
       summary:
-        'Hashed geotagged accident site photos and vehicle impact stills on ingestion. Embedded verified photo tables directly into the custom letterhead DOCX & PDF report.',
+        'Processed geotagged site photos and visual attachments on upload. Embedded verified photo tables directly into the custom letterhead DOCX & Single PDF report.',
       fields: [
-        { label: 'Plate Verification', value: 'QM8860E & SYL 405 Matched', confidence: '99.5%' },
+        { label: 'File Matching', value: 'QM8860E & SYL 405 Matched', confidence: '99.5%' },
         { label: 'Geotag & EXIF', value: 'Coordinates & Time Intact', confidence: '99.1%' },
         { label: 'Magic-Byte Guard', value: '25 MB Limit · Validated', confidence: '100%' },
         { label: 'Manager Queue', value: 'Ready for Sign-Off', confidence: '100%' },
@@ -124,14 +124,14 @@
   const RECENT_VAULT_FILES = [
     {
       id: 'MY-20261102-1233AF',
-      title: 'RC Book, Permit & Driver License Audit · QM8860E',
+      title: 'Registration & Identity Document Audit · QM8860E',
       meta: 'sha256:9f84c2e1 · 18 MB PDF · Magic-byte verified',
       status: 'ocr_complete',
       preset: 'upload-docs',
     },
     {
       id: 'MY-20261104-0842BC',
-      title: 'Police FIR & Hospital Admission Cross-Check',
+      title: 'Incident Statement & Stamp Cross-Check',
       meta: 'sha256:3c19a7d4 · S.41(1) RTA · 1 stamp flag',
       status: 'review_required',
       preset: 'ocr-translate',
@@ -150,30 +150,30 @@
       id: 'step-1-intake',
       stepNumber: '01',
       statusLabel: 'draft',
-      title: '01. Create New Case & Intake',
+      title: '01. Create New Project',
       description:
-        'Managers configure the isolated workspace and onboard team analysts before opening new case dossiers with client and asset particulars.',
+        'Managers configure the workspace and onboard team members before opening new project folders with client and source particulars.',
       previewTag: 'Step 1 · Intake',
       previewBadgeTop: 'route',
       previewBadgeBottom: 'check',
       rows: [
         {
           name: 'Company Tenant Isolated',
-          detail: 'Fail-closed org workspace ready',
+          detail: 'Private org workspace ready',
           time: 'Active',
           status: 'Approved',
           avatar: ASSETS.avatar2,
         },
         {
-          name: 'Analyst Access Control',
-          detail: 'Affirmative manager verification',
+          name: 'Team Access Control',
+          detail: 'Manager verification enabled',
           time: 'Role Gate',
           status: 'Verified',
           avatar: ASSETS.avatar1,
         },
         {
-          name: 'Case #REF-20261102-1233AF',
-          detail: 'Policy AEKK1236016 · QM8860E',
+          name: 'Project #REF-20261102-1233AF',
+          detail: 'Terms AEKK1236016 · QM8860E',
           time: 'Status',
           status: 'draft',
           avatar: ASSETS.avatar3,
@@ -184,30 +184,30 @@
       id: 'step-2-upload',
       stepNumber: '02',
       statusLabel: 'documents_uploaded',
-      title: '02. Forensic Upload & SHA-256 Hashing',
+      title: '02. Secure Upload & File Ingestion',
       description:
-        'Upload RC books, driver licenses, FIRs, hospital bills, and geotagged scene photos—each validated by magic bytes and hashed with SHA-256.',
-      previewTag: 'Step 2 · Vault Hash',
+        'Drop in all your project documents—PDFs, Word files, invoices, and photos.',
+      previewTag: 'Step 2 · Storage',
       previewBadgeTop: 'lock',
       previewBadgeBottom: 'vault',
       rows: [
         {
-          name: 'Vehicle & Identity Docs',
-          detail: 'RC, Permit, Fitness & Driver ID',
+          name: 'Source & Identity Docs',
+          detail: 'Registration, Terms & Identity ID',
           time: 'SHA-256',
           status: 'Committed',
           avatar: ASSETS.avatar3,
         },
         {
-          name: 'Legal & Medical Files',
-          detail: 'Police FIR, Hospital & Garage Bills',
+          name: 'Legal & Billing Files',
+          detail: 'Statements, Invoices & Itemized Bills',
           time: '25 MB Max',
           status: 'Validated',
           avatar: ASSETS.avatar2,
         },
         {
           name: 'Geotagged Scene Photos',
-          detail: 'Tenant-isolated UUID storage',
+          detail: 'Private cloud storage',
           time: 'Status',
           status: 'uploaded',
           avatar: ASSETS.avatar1,
@@ -220,20 +220,20 @@
       statusLabel: 'ocr_complete',
       title: '03. Asynchronous OCR & AI Extraction',
       description:
-        'Background workers run PaddleOCR, OpenCV preprocessing, and multimodal AI with prompt-injection defenses to extract structured JSON.',
+        'Smart AI reads text, numbers, and tables from all common formats automatically.',
       previewTag: 'Step 3 · AI Pipeline',
       previewBadgeTop: 'mail',
       previewBadgeBottom: 'verified',
       rows: [
         {
-          name: 'OpenCV & PaddleOCR Layer',
+          name: 'Automated Text & Table Reading',
           detail: 'Deskewed scans & physical stamps',
           time: 'Workers',
           status: 'Extracted',
           avatar: ASSETS.avatar1,
         },
         {
-          name: 'Multimodal Forensic AI',
+          name: 'Smart Document Verification',
           detail: 'Dates, totals, injuries & clauses',
           time: 'Dual-Layer',
           status: 'Structured',
@@ -254,20 +254,20 @@
       statusLabel: 'review_required',
       title: '04. Discrepancy & Fraud Analysis',
       description:
-        'Cross-checks driver license validity on the date of loss, flags hospital stamp contradictions, and verifies itemized garage spares.',
+        'Compares info across files to flag date differences, invoice math mismatches, and missing details.',
       previewTag: 'Step 4 · Cross-Check',
       previewBadgeTop: 'scan',
       previewBadgeBottom: 'check',
       rows: [
         {
-          name: 'Driver License Date Audit',
+          name: 'Credential Date Audit',
           detail: 'Verified against exact date of loss',
           time: 'Rule 1',
           status: 'Flagged',
           avatar: ASSETS.avatar2,
         },
         {
-          name: 'Hospital Stamp Timeline',
+          name: 'Official Stamp Timeline',
           detail: 'Admission vs reported incident time',
           time: 'Rule 2',
           status: 'Checked',
@@ -309,7 +309,7 @@
         },
         {
           name: 'Submitted to Manager Queue',
-          detail: 'Full evidence packet attached',
+          detail: 'Full document package attached',
           time: 'Status',
           status: 'ready_for_report',
           avatar: ASSETS.avatar2,
@@ -322,28 +322,28 @@
       statusLabel: 'completed',
       title: '06. Report Synthesis & Manager Sign-Off',
       description:
-        'Compiles official .docx and .pdf deliverables with custom corporate letterheads for affirmative Manager approval or feedback.',
+        'Compiles official deliverables with custom corporate letterheads for Manager approval or feedback.',
       previewTag: 'Step 6 · Sign-Off',
       previewBadgeTop: 'lock',
       previewBadgeBottom: 'cloud',
       rows: [
         {
           name: 'Custom DOCX & PDF Export',
-          detail: 'Corporate letterhead & evidence log',
+          detail: 'Corporate letterhead & summary log',
           time: 'Rendered',
           status: 'Generated',
           avatar: ASSETS.avatar2,
         },
         {
-          name: 'Manager Audit Inspection',
-          detail: 'Affirmative approval or feedback',
+          name: 'Manager Audit & Review',
+          detail: 'Review approval or feedback',
           time: 'AuditLog',
           status: 'Signed Off',
           avatar: ASSETS.avatar3,
         },
         {
-          name: 'Final Dossier Archived',
-          detail: 'Immutable AES-256 + SHA-256',
+          name: 'Final Single PDF Ready',
+          detail: 'Private & Protected',
           time: 'Status',
           status: 'completed',
           avatar: ASSETS.avatar1,
@@ -355,8 +355,8 @@
   const LANGUAGE_TOGGLES = [
     { code: 'EN', label: 'English', native: null, docType: 'Policies & bills', accent: 'bg-blue' },
     { code: 'BM', label: 'Bahasa Melayu', native: null, docType: 'Police & PDRM', accent: 'bg-amber' },
-    { code: 'HI', label: 'Hindi', native: 'हिन्दी', docType: 'FIRs & RC books', accent: 'bg-orange' },
-    { code: 'TA', label: 'Tamil', native: 'தமிழ்', docType: 'Hospital notes', accent: 'bg-sky' },
+    { code: 'HI', label: 'Hindi', native: 'हिन्दी', docType: 'Contracts & bills', accent: 'bg-orange' },
+    { code: 'TA', label: 'Tamil', native: 'தமிழ்', docType: 'Billing & reports', accent: 'bg-sky' },
   ];
 
   // Helper: Extract claim preset or custom prompt
@@ -373,7 +373,7 @@
         sourceLabel: `Custom Request: "${prompt.slice(0, 48)}${prompt.length > 48 ? '...' : ''}"`,
       };
     }
-    if (lower.includes('fir') || lower.includes('hospital') || lower.includes('medical') || lower.includes('stamp')) {
+    if (lower.includes('statement') || lower.includes('invoice') || lower.includes('billing') || lower.includes('stamp')) {
       return {
         ...PRESET_RESULTS['ocr-translate'],
         sourceLabel: `Custom Request: "${prompt.slice(0, 48)}${prompt.length > 48 ? '...' : ''}"`,
@@ -529,6 +529,10 @@
     if (DOM.btnOpenDemo) DOM.btnOpenDemo.addEventListener('click', () => openModal('demo'));
     if (DOM.mobileBtnDemo) DOM.mobileBtnDemo.addEventListener('click', () => { closeMobileMenu(); openModal('demo'); });
     if (DOM.heroScheduleDemo) DOM.heroScheduleDemo.addEventListener('click', () => openModal('demo'));
+    const finalCtaDemoBtn = document.getElementById('finalCtaDemoBtn');
+    if (finalCtaDemoBtn) finalCtaDemoBtn.addEventListener('click', () => openModal('demo'));
+    const footerScheduleDemo = document.getElementById('footerScheduleDemo');
+    if (footerScheduleDemo) footerScheduleDemo.addEventListener('click', () => openModal('demo'));
     if (DOM.faqContactBtn) DOM.faqContactBtn.addEventListener('click', () => openModal('demo'));
     if (DOM.synthesisSandboxBtn) DOM.synthesisSandboxBtn.addEventListener('click', () => openModal('demo'));
     if (DOM.footerContactBtn) DOM.footerContactBtn.addEventListener('click', () => openModal('demo'));
@@ -541,58 +545,21 @@
   // --------------------------------------------------------------------------
   // Hero Workspace Logic
   // --------------------------------------------------------------------------
-  function setHeroRail(rail, preset) {
-    state.activeRail = rail;
-    if (preset) {
-      state.activeResult = extractClaimPreset(preset);
-    } else if (rail === 'forms') {
-      state.activeResult = extractClaimPreset('upload-docs');
-    } else {
-      state.activeResult = null;
-    }
+  function setHeroRail(rail) {
+    state.activeRail = 'workspace';
+    state.activeResult = null;
     renderHeroWorkspace();
   }
 
   function renderHeroWorkspace() {
-    // Update rail buttons active state
-    DOM.railBtnWorkspace.className = 'rail-btn' + (state.activeRail === 'workspace' && !state.activeResult ? ' active-black' : '');
-    DOM.railBtnQueue.className = 'rail-btn' + (state.activeRail === 'queue' ? ' active-blue' : '');
-    DOM.railBtnForms.className = 'rail-btn' + (state.activeResult ? ' active-yellow' : '');
-    DOM.railBtnVault.className = 'rail-btn' + (state.activeRail === 'vault' ? ' active-teal' : '');
-
-    // Header hint & Back button
-    if (state.activeResult) {
-      DOM.workspaceHint.textContent = 'Structured forensic extraction, SHA-256 digest & draft synthesis';
-      DOM.workspaceBackWrapper.innerHTML = `
-        <button type="button" class="btn-back-tools" id="btnBackToTools">
-          ${ICONS.arrowLeft} Back to tools
-        </button>
-      `;
-      document.getElementById('btnBackToTools').addEventListener('click', () => {
-        state.activeResult = null;
-        state.activeRail = 'workspace';
-        renderHeroWorkspace();
-      });
-    } else {
-      DOM.workspaceHint.textContent = 'Select a forensic pipeline module to inspect live extraction';
-      DOM.workspaceBackWrapper.innerHTML = '';
+    if (DOM.railBtnWorkspace) {
+      DOM.railBtnWorkspace.className = 'rail-btn active-black';
     }
-
-    // View Switching
-    if (state.activeResult) {
-      DOM.workspaceCardsGrid.style.display = 'none';
-      DOM.workspaceVaultPanel.style.display = 'none';
-      DOM.workspaceResultPanel.style.display = 'block';
-      renderResultPanel(state.activeResult);
-    } else if (state.activeRail === 'queue' || state.activeRail === 'vault') {
-      DOM.workspaceCardsGrid.style.display = 'none';
-      DOM.workspaceResultPanel.style.display = 'none';
-      DOM.workspaceVaultPanel.style.display = 'block';
-      renderVaultPanel(state.activeRail);
-    } else {
+    if (DOM.workspaceCardsGrid) {
       DOM.workspaceCardsGrid.style.display = 'grid';
-      DOM.workspaceResultPanel.style.display = 'none';
-      DOM.workspaceVaultPanel.style.display = 'none';
+    }
+    if (DOM.workspaceHint) {
+      DOM.workspaceHint.textContent = 'Automated document intake, cross-verification & Single PDF report synthesis';
     }
   }
 
@@ -642,7 +609,7 @@
   }
 
   function renderVaultPanel(rail) {
-    const title = rail === 'vault' ? 'Tamper-Evident SHA-256 Storage Vault' : 'Tenant-Isolated Dossier Queue';
+    const title = rail === 'vault' ? 'Secure Document Storage Vault' : 'Recent Document Queue';
     const rowsHtml = RECENT_VAULT_FILES.map(
       (item) => `
       <button type="button" class="vault-file-row" data-preset="${item.preset}">
@@ -686,36 +653,19 @@
 
   function initHeroWorkspace() {
     // Rail clicks
-    DOM.railBtnWorkspace.addEventListener('click', () => setHeroRail('workspace'));
-    DOM.railBtnQueue.addEventListener('click', () => setHeroRail('queue'));
-    DOM.railBtnForms.addEventListener('click', () => setHeroRail('forms'));
-    DOM.railBtnVault.addEventListener('click', () => setHeroRail('vault'));
-
-    // 4 Action Cards clicks
-    const actionCards = DOM.workspaceCardsGrid.querySelectorAll('.action-card');
-    actionCards.forEach((card) => {
-      card.addEventListener('click', () => {
-        const preset = card.getAttribute('data-preset');
-        setHeroRail('workspace', preset);
+    if (DOM.railBtnWorkspace) {
+      DOM.railBtnWorkspace.addEventListener('click', () => {
+        state.activeRail = 'workspace';
+        renderHeroWorkspace();
       });
-    });
+    }
 
-    // Command Bar interactive prompt submit
+    // Command Bar interactive prompt submit - opens demo modal
     const promptForm = document.getElementById('workspacePromptForm');
-    const promptInput = document.getElementById('workspacePrompt');
-    if (promptForm && promptInput) {
+    if (promptForm) {
       promptForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        const query = (promptInput.value || '').toLowerCase().trim();
-        if (query.includes('fir') || query.includes('hospital') || query.includes('medical') || query.includes('stamp')) {
-          setHeroRail('workspace', 'ocr-translate');
-        } else if (query.includes('fraud') || query.includes('discrepancy') || query.includes('audit') || query.includes('garage') || query.includes('voice')) {
-          setHeroRail('workspace', 'fraud-audit');
-        } else if (query.includes('photo') || query.includes('damage') || query.includes('scene') || query.includes('evidence')) {
-          setHeroRail('workspace', 'damage-evidence');
-        } else {
-          setHeroRail('workspace', 'upload-docs');
-        }
+        openModal('demo');
       });
     }
   }
@@ -1211,9 +1161,9 @@
             <div class="modal-success-header">
               <span style="color:#16a34a; margin-top:2px;">${ICONS.shieldCheck}</span>
               <div>
-                <h3>Credentials verified (${state.loginRole === 'investigator' ? 'Investigator' : 'Manager'})</h3>
+                <h3>Credentials verified (${state.loginRole === 'investigator' ? 'Analyst' : 'Manager'})</h3>
                 <p>
-                  Signed in as <strong>${emailVal}</strong>. Your encrypted claim vault is ready.
+                  Signed in as <strong>${emailVal}</strong>. Your private document workspace is ready.
                 </p>
               </div>
             </div>

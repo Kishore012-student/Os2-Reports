@@ -67,27 +67,27 @@
   }
 
   // --------------------------------------------------------------------------
-  // Hero — animated forensic pipeline schematic
+  // Hero — animated pipeline schematic
   // --------------------------------------------------------------------------
   var PIPELINE = {
     upload: {
-      step: '01 · Evidence Upload & SHA-256',
-      summary: 'Magic-byte validation & cryptographic hash commitment on arrival.',
-      metric: 'sha256:e3b0c4...98fc',
+      step: '01 · Document Ingestion & Verification',
+      summary: 'File validation & integrity commitment on arrival.',
+      metric: 'Direct File Intake',
     },
     ocr: {
-      step: '02 · Dual-Layer OCR & Forensic AI',
-      summary: 'OpenCV deskewing, multi-lingual OCR & isolated JSON extraction.',
+      step: '02 · Smart OCR & Data Extraction',
+      summary: 'Automated deskewing, multi-lingual OCR & structured data extraction.',
       metric: '99.6% Field Accuracy',
     },
     audit: {
       step: '03 · Cross-Document Discrepancy Check',
-      summary: 'Validates license dates, FIR vs. hospital stamps & repair math.',
+      summary: 'Validates document dates, stamp timelines & invoice calculation math.',
       metric: '3 Automated Checks',
     },
     report: {
-      step: '04 · Compiled .docx & .pdf Dossier',
-      summary: 'Custom letterhead deliverable with embedded SHA-256 chain.',
+      step: '04 · Compiled Single PDF Report',
+      summary: 'Custom letterhead deliverable with verified source data.',
       metric: '< 5 Min Turnaround',
     },
   };

@@ -24,12 +24,12 @@
       sourceLabel: 'RC Book, Fitness Cert, Permit & Driver License Packet (18 MB PDF)',
       formCode: 'OCR COMPLETE · TENANT-ISOLATED VAULT',
       policyNumber: 'AEKK1236016',
-      claimantName: 'ARS Engineering (Driver: Ian Mcowen Mail)',
+      claimantName: 'ARS Engineering (Contact: Ian Mcowen Mail)',
       incidentDate: '04 Nov 2024',
       estimatedAmount: '< 5 Min Synthesis · DOCX & PDF',
       detectedLanguage: 'PaddleOCR + Multimodal Vision',
       confidenceScore: 99.1,
-      cloudVaultId: 'sha256:9f84c2e1...a7b0 · /data/claims/MY-20261102',
+      cloudVaultId: 'sha256:9f84c2e1...a7b0 · /data/dossiers/REF-20261102',
       summary:
         'Validated magic bytes, committed SHA-256 digest, and parsed Registration Certificate, Permit, and Driver License validity against the exact Date of Loss.',
       fields: [
@@ -44,12 +44,12 @@
       sourceLabel: 'Police FIR, Hospital Admission & Discharge Summary (Multi-Page)',
       formCode: 'DISCREPANCY AUDIT · REVIEW REQUIRED',
       policyNumber: 'VKK9039631',
-      claimantName: 'Azahari Bin Talip · TPBI Claim',
+      claimantName: 'Azahari Bin Talip · Case Dossier',
       incidentDate: '04 Nov 2024 · 7:40 AM',
       estimatedAmount: '1 Timestamp Contradiction Flagged',
       detectedLanguage: 'OpenCV Deskew + Bilingual OCR',
       confidenceScore: 98.7,
-      cloudVaultId: 'sha256:3c19a7d4...82fe · /data/claims/MY-20261102',
+      cloudVaultId: 'sha256:3c19a7d4...82fe · /data/dossiers/REF-20261102',
       summary:
         'Extracted Police FIR under S.41(1) RTA 1987 alongside Hospital admission timestamps and discharge notes. Cross-checked admission time against reported accident time.',
       fields: [
@@ -62,7 +62,7 @@
     'fraud-audit': {
       id: 'fraud-audit',
       sourceLabel: 'Garage Repair Estimate vs. Itemized Spares Cross-Verification',
-      formCode: 'ANOMALY CHECK · INVESTIGATOR AUDIT',
+      formCode: 'ANOMALY CHECK · ANALYST AUDIT',
       policyNumber: 'MY-20261102-1233AF',
       claimantName: 'Multi-Layer Discrepancy Engine',
       incidentDate: 'Itemized Audit Complete',
@@ -82,7 +82,7 @@
     'voice-notes': {
       id: 'voice-notes',
       sourceLabel: 'Garage Repair Estimate vs. Itemized Spares Cross-Verification',
-      formCode: 'ANOMALY CHECK · INVESTIGATOR AUDIT',
+      formCode: 'ANOMALY CHECK · ANALYST AUDIT',
       policyNumber: 'MY-20261102-1233AF',
       claimantName: 'Multi-Layer Discrepancy Engine',
       incidentDate: 'Itemized Audit Complete',
@@ -150,9 +150,9 @@
       id: 'step-1-intake',
       stepNumber: '01',
       statusLabel: 'draft',
-      title: '01. Onboarding & Claim Intake',
+      title: '01. Create New Case & Intake',
       description:
-        'Managers configure the tenant workspace and approve investigators before opening claim files with policy, vehicle, and incident details.',
+        'Managers configure the isolated workspace and onboard team analysts before opening new case dossiers with client and asset particulars.',
       previewTag: 'Step 1 · Intake',
       previewBadgeTop: 'route',
       previewBadgeBottom: 'check',
@@ -165,14 +165,14 @@
           avatar: ASSETS.avatar2,
         },
         {
-          name: 'Investigator Access Control',
+          name: 'Analyst Access Control',
           detail: 'Affirmative manager verification',
           time: 'Role Gate',
           status: 'Verified',
           avatar: ASSETS.avatar1,
         },
         {
-          name: 'Claim #MY-20261102-1233AF',
+          name: 'Case #REF-20261102-1233AF',
           detail: 'Policy AEKK1236016 · QM8860E',
           time: 'Status',
           status: 'draft',
@@ -286,9 +286,9 @@
       id: 'step-5-audit',
       stepNumber: '05',
       statusLabel: 'ready_for_report',
-      title: '05. Investigator Audit & Customization',
+      title: '05. Analyst Audit & Customization',
       description:
-        'Review extracted fields in the Claim Workspace, add surveyor remarks, attach Genuine / Suspicious / Repudiate findings, and submit.',
+        'Review extracted fields in the Analyst Workspace, add custom remarks, attach verification findings, and submit for approval.',
       previewTag: 'Step 5 · Workspace',
       previewBadgeTop: 'scan',
       previewBadgeBottom: 'verified',
@@ -642,7 +642,7 @@
   }
 
   function renderVaultPanel(rail) {
-    const title = rail === 'vault' ? 'Tamper-Evident SHA-256 Evidence Vault' : 'Tenant-Isolated Claims Queue';
+    const title = rail === 'vault' ? 'Tamper-Evident SHA-256 Storage Vault' : 'Tenant-Isolated Dossier Queue';
     const rowsHtml = RECENT_VAULT_FILES.map(
       (item) => `
       <button type="button" class="vault-file-row" data-preset="${item.preset}">
@@ -996,7 +996,7 @@
         </div>
         <h2 class="modal-heading" id="modalHeading">Schedule a live OCR walkthrough</h2>
         <p class="modal-desc">
-          See how OS2 Reports anchors party identities, parses PDRM evidence, and drafts Template 1–3 DOCX &amp; PDF investigation reports.
+          See how OS2 Reports ingests multi-source PDFs and images, cross-verifies data points, and drafts complete DOCX &amp; PDF reports in minutes.
         </p>
 
         <div id="demoFormWrapper">
@@ -1014,18 +1014,18 @@
             </div>
 
             <div class="modal-form-group">
-              <label class="modal-label" for="demoCompany">Insurance carrier or TPA</label>
-              <input type="text" id="demoCompany" class="modal-input" placeholder="Pacific Mutual Insurance" />
+              <label class="modal-label" for="demoCompany">Company or organization</label>
+              <input type="text" id="demoCompany" class="modal-input" placeholder="Acme Global Corporation" />
               <div class="modal-input-error" id="demoCompanyError" style="display:none;"></div>
             </div>
 
             <div class="modal-form-group">
-              <label class="modal-label" for="demoVolume">Monthly claim packet volume</label>
+              <label class="modal-label" for="demoVolume">Monthly document packet volume</label>
               <select id="demoVolume" class="modal-input">
-                <option value="Under 1,000 claims / mo">Under 1,000 claims / mo</option>
-                <option value="1,000 - 5,000 claims / mo" selected>1,000 - 5,000 claims / mo</option>
-                <option value="5,000 - 25,000 claims / mo">5,000 - 25,000 claims / mo</option>
-                <option value="25,000+ claims / mo">25,000+ claims / mo</option>
+                <option value="Under 1,000 files / mo">Under 1,000 files / mo</option>
+                <option value="1,000 - 5,000 files / mo" selected>1,000 - 5,000 files / mo</option>
+                <option value="5,000 - 25,000 files / mo">5,000 - 25,000 files / mo</option>
+                <option value="25,000+ files / mo">25,000+ files / mo</option>
               </select>
             </div>
 
@@ -1114,19 +1114,19 @@
         </div>
         <h2 class="modal-heading" id="modalHeading">Log in to OS2 Reports</h2>
         <p class="modal-desc">
-          Sign in with your approved Investigator or Manager account to access your fail-closed organization workspace.
+          Sign in with your approved Analyst or Manager account to access your organization workspace.
         </p>
 
         <div class="modal-role-switch">
-          <button type="button" class="role-switch-btn ${state.loginRole === 'investigator' ? 'is-active' : ''}" id="btnRoleInvestigator">Investigator</button>
+          <button type="button" class="role-switch-btn ${state.loginRole === 'investigator' ? 'is-active' : ''}" id="btnRoleInvestigator">Analyst</button>
           <button type="button" class="role-switch-btn ${state.loginRole === 'manager' ? 'is-active' : ''}" id="btnRoleManager">Manager</button>
         </div>
 
         <div id="loginFormWrapper">
           <form id="loginModalForm" novalidate style="margin-top:16px;">
             <div class="modal-form-group">
-              <label class="modal-label" for="loginEmail">Employee email</label>
-              <input type="email" id="loginEmail" class="modal-input" placeholder="${state.loginRole === 'investigator' ? 'investigator@os2reports.com' : 'manager@os2reports.com'}" />
+              <label class="modal-label" for="loginEmail">Work email</label>
+              <input type="email" id="loginEmail" class="modal-input" placeholder="${state.loginRole === 'investigator' ? 'analyst@os2reports.com' : 'manager@os2reports.com'}" />
               <div class="modal-input-error" id="loginEmailError" style="display:none;"></div>
             </div>
 
@@ -1142,7 +1142,7 @@
             </div>
 
             <button type="submit" class="modal-submit-btn" id="btnLoginSubmit">
-              Log in as ${state.loginRole === 'investigator' ? 'Investigator' : 'Manager'}
+              Log in as ${state.loginRole === 'investigator' ? 'Analyst' : 'Manager'}
             </button>
           </form>
         </div>
@@ -1157,8 +1157,8 @@
         state.loginRole = 'investigator';
         btnInvestigator.classList.add('is-active');
         btnManager.classList.remove('is-active');
-        emailInput.placeholder = 'investigator@os2reports.com';
-        submitBtn.textContent = 'Log in as Investigator';
+        emailInput.placeholder = 'analyst@os2reports.com';
+        submitBtn.textContent = 'Log in as Analyst';
       });
 
       btnManager.addEventListener('click', () => {
@@ -1234,18 +1234,18 @@
             isPrivacy
               ? `
             <p>
-              OS2 Reports by OS2 Studio validates file magic bytes, generates SHA-256 cryptographic hashes on ingestion, and encrypts all claim evidence and generated DOCX/PDF reports using TLS 1.3 in transit and AES-256 at rest.
+              OS2 Reports by OS2 Studio validates file magic bytes, generates SHA-256 cryptographic hashes on ingestion, and encrypts all document records and generated DOCX/PDF reports using TLS 1.3 in transit and AES-256 at rest.
             </p>
             <p>
-              Fail-closed multi-tenant isolation enforces strict database, cache, and filesystem separation per insurance organization with tamper-resistant AuditLog recording and anti-jailbreak AI prompt boundaries.
+              Fail-closed multi-tenant isolation enforces strict database, cache, and filesystem separation per customer organization with tamper-resistant AuditLog recording and anti-jailbreak AI prompt boundaries.
             </p>
           `
               : `
             <p>
-              Enterprise OS2 Reports subscriptions include Organization Onboarding, Asynchronous PaddleOCR &amp; Multimodal Vision extraction, Discrepancy &amp; Fraud Analysis, Custom Letterhead DOCX/PDF synthesis, and Manager Sign-Off.
+              Enterprise OS2 Reports subscriptions include Organization Onboarding, Asynchronous PaddleOCR &amp; Multimodal Vision extraction, Discrepancy &amp; Verification Audit, Custom Letterhead DOCX/PDF synthesis, and Manager Sign-Off.
             </p>
             <p>
-              Insurers and adjusting firms retain full ownership of source evidence, SHA-256 checksums, extracted report boxes, and versioned dossiers with full export or deletion on demand.
+              Customer organizations retain full ownership of source documents, SHA-256 checksums, extracted report data, and versioned dossiers with full export or deletion on demand.
             </p>
           `
           }
